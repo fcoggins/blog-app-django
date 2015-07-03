@@ -8,20 +8,13 @@
     <div>
         <h1><a href="">Soccer Mom to Software Engineer</a></h1>
     </div>
-    <div>
-        <p>published: 7/2/15 12:14pm</p>
-        <h2>
-            <a href="">First Post</a>
-        </h2>
-        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at</p>
-        
-    </div>
-    <div>
-        <p>published: 7/2/15 2:03pm</p>
-        <h2>
-            <a href="">Second Post</a>
-        </h2>
-        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at</p>
-    </div>
+    {% for post in posts %}
+        <div>
+            <p>published date: {{post.published_date}}</p>
+            <p>author: {{post.author}}</p>
+            <h2><a href="">{{ post.title }}</a></h2>      
+            <p>{{ post.text |linebreaks}}</p>
+        </div>
+    {% endfor %}
 </body>
 </html>
