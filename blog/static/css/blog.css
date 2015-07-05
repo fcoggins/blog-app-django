@@ -60,3 +60,31 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
+
+.edit_post {
+    font-size: 1.3em;
+    margin: 0 1em 0 0;
+}
+
+.date_date {
+    padding: 0 1em 0 0;
+}
+
+.tooltip .tooltip-inner {
+    background-color: #16193b;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #16193b;
+}
+
+.blog_stuff {
+    float: none;
+    margin: auto;
+    padding: 0 5%;
+}
+
+
+
+
+
